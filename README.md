@@ -13,3 +13,13 @@ Description: Product (item) name. Nominal.</li>
 <li>CustomerID: Customer number. Nominal, a 5-digit integral number uniquely assigned to each customer.</li>
 <li>Country: Country name. Nominal, the name of the country where each customer resides.</li>
 </ul>
+
+<p> This project has been completed in 5 steps :-</p>
+<ol>
+<li>Data Cleaning</li>
+<li>Exploratory Data Analysis (EDA)</li>
+<li>Data Transformation</li>
+<li>Clustering</li>
+<li>Cluster Profiling</li>
+<li>Model Performance</li>
+</ol>
