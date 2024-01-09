@@ -34,7 +34,9 @@ Description: Product (item) name. Nominal.</li>
 
 <h1>Model Performance</h1>
 <h2>Kmeans</h2>
-![kmeans](https://github.com/jouherdauf/Customer-Segmentation/assets/64728749/ab869b5e-088e-4cfb-8605-3d0a30a4539a)
+![kmeans](https://github.com/jouherdauf/Customer-Segmentation/assets/64728749/a43595a3-0a1b-49d3-a499-243b59933a95)
+
 <h2>Heirachical</h2>
-![heirachical](https://github.com/jouherdauf/Customer-Segmentation/assets/64728749/e576e7cd-0ead-47f1-a0da-fbe19d47d788)
+![heirachical](https://github.com/jouherdauf/Customer-Segmentation/assets/64728749/27bdc89e-93f8-404e-b30b-588e30a9eae8)
+
 
