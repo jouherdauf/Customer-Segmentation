@@ -88,23 +88,23 @@ Description: Product (item) name. Nominal.</li>
 ## **Conclusion**
 
 
-###1. Data Cleaning: Here, outliers, null values, and canceled orders were eliminated.
-###2. Exploratory Data Analysis (EDA): In this section, univariate and bivariate analyses were performed to gain a deeper understanding of the data. The company offers medium-to-low quantities of single items at a cheaper unit cost. More orders of various items were placed in the previous quarter, with the UK placing the highest orders overall. The "pack of 72 retrospot cake cases" was the best-selling item in terms of amount sold.
+### 1. Data Cleaning: Here, outliers, null values, and canceled orders were eliminated.
+### 2. Exploratory Data Analysis (EDA): In this section, univariate and bivariate analyses were performed to gain a deeper understanding of the data. The company offers medium-to-low quantities of single items at a cheaper unit cost. More orders of various items were placed in the previous quarter, with the UK placing the highest orders overall. The "pack of 72 retrospot cake cases" was the best-selling item in terms of amount sold.
 
-###3. Data Transformation: For each customer ID in this section,Monetary , frequency, and recency analysis was produced. These three elements are essential part of customer segmentation.
+### 3. Data Transformation: For each customer ID in this section,Monetary , frequency, and recency analysis was produced. These three elements are essential part of customer segmentation.
 
-###4 Outliers detection & Feture Transformation: Frequency  and Monetary contains high number's of outliers but by any customer id it means we may be ignoring potential client so we have remove very outliers.Recency,Frequency and Monetary is higly positive so we have applied logarithm transformation to it.
+### 4 Outliers detection & Feture Transformation: Frequency  and Monetary contains high number's of outliers but by any customer id it means we may be ignoring potential client so we have remove very outliers.Recency,Frequency and Monetary is higly positive so we have applied logarithm transformation to it.
 
-###5. Clustering Kmeans: In this step, the optimal number of clusters was ascertained by using silhouette analysis and the elbow technique. The optimal clusters were found to be three. The KMeans model contained three clusters. Every customer ID was allocated to one of the three clusters.
+### 5. Clustering Kmeans: In this step, the optimal number of clusters was ascertained by using silhouette analysis and the elbow technique. The optimal clusters were found to be three. The KMeans model contained three clusters. Every customer ID was allocated to one of the three clusters.
 
-###6 Clustering Silhoutte - Using the silhoutte analysis and dendograms distance, the ideal number of clusters is three.
+### 6. Clustering Silhoutte - Using the silhoutte analysis and dendograms distance, the ideal number of clusters is three.
 
-###7. Cluster Profiling: The frequency, monetary values, and recency of each client segment were averaged in this section. As a result, three groups were identified: high value and loyal customers, average value and frequent customers, and low value and infrequent customers.
+### 7. Cluster Profiling: The frequency, monetary values, and recency of each client segment were averaged in this section. As a result, three groups were identified: high value and loyal customers, average value and frequent customers, and low value and infrequent customers.
 
-###8. Model Performance: From the above table we can say that 3 clusters are optimum for clustering.The best performance is given by kmeans with 3 clusters and in Hierarchical clustering best model is given by ward method with 3 clusters
+### 8. Model Performance: From the above table we can say that 3 clusters are optimum for clustering.The best performance is given by kmeans with 3 clusters and in Hierarchical clustering best model is given by ward method with 3 clusters
 
 
-###Based on the results of this analysis, the company may provide its average and low-value clients with enticing offers, and it can also provide specific business services to its high-value clients, such loyalty points.
+### Based on the results of this analysis, the company may provide its average and low-value clients with enticing offers, and it can also provide specific business services to its high-value clients, such loyalty points.
 
 
 
