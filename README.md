@@ -32,3 +32,9 @@ Description: Product (item) name. Nominal.</li>
 <li>As customers buy in large quantites, it is a volume based business.</li>
 </ol>
 
+<h1>Model Performance</h1>
+<h2>Kmeans</h2>
+![kmeans](https://github.com/jouherdauf/Customer-Segmentation/assets/64728749/ab869b5e-088e-4cfb-8605-3d0a30a4539a)
+<h2>Heirachical</h2>
+![heirachical](https://github.com/jouherdauf/Customer-Segmentation/assets/64728749/e576e7cd-0ead-47f1-a0da-fbe19d47d788)
+
