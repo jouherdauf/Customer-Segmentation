@@ -39,4 +39,49 @@ Description: Product (item) name. Nominal.</li>
 <h2>Heirachical</h2>
 ![heirachical](https://github.com/jouherdauf/Customer-Segmentation/assets/64728749/27bdc89e-93f8-404e-b30b-588e30a9eae8)
 
+<table>
+  <tr>
+    <th>Sl.no</th>
+    <th>Model Name</th>
+    <th>Data</th>
+    <th>Optimal_Number_of_cluster</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>K-Means with silhouette_score </td>
+    <td>RFM</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>K-Means with Elbow methos </td>
+    <td>RFM</td>
+    <td>3</td>
+  </tr>
+    <tr>
+    <td>3</td>
+    <td> K-Means with distortion methos</td>
+    <td>RFM</td>
+    <td>3</td>
+  </tr>
+    <tr>
+    <td>4</td>
+    <td>K-Means with calinski_harabasz </td>
+    <td>RFM</td>
+    <td>3</td>
+  </tr>
+    <tr>
+    <td>5</td>
+    <td>Hierarchical clustering(ward) with silhoutte_score</td>
+    <td>RFM</td>
+    <td>3</td>
+  </tr>
+    <tr>
+    <td>6</td>
+    <td>Hierarchical clustering(ward) with dendograms and eulidean distance 40</td>
+    <td>RFM</td>
+    <td>3</td>
+  </tr>
+</table>
+
 
