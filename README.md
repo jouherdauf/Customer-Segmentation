@@ -23,3 +23,12 @@ Description: Product (item) name. Nominal.</li>
 <li>Cluster Profiling</li>
 <li>Model Performance</li>
 </ol>
+
+<p>From the EDA section some assumptions can be made</p>
+<ol>
+<li>Small to medium quantities of each item are purchased more.</li>
+<li>Unit price for most products is low.</li>
+<li>Last quarter of the year has more orders maybe due to the holiday season.</li>
+<li>As customers buy in large quantites, it is a volume based business.</li>
+</ol>
+
