@@ -39,6 +39,7 @@ Description: Product (item) name. Nominal.</li>
 <h2>Heirachical</h2>
 ![heirachical](https://github.com/jouherdauf/Customer-Segmentation/assets/64728749/27bdc89e-93f8-404e-b30b-588e30a9eae8)
 
+<h2>Mpdel Evaluation Table</h2>
 <table>
   <tr>
     <th>Sl.no</th>
