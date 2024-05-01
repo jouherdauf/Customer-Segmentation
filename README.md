@@ -1,113 +1,68 @@
-# Customer-Segmentation
-<p>In a world where companies are expanding rapidly and regularly serving a big consumer base. Businesses must now classify their clientele in order to provide better customer service and to better understand the various ways that varied clientele might affect their operations. The purpose of this project is to categorize customers and determine how they affect the company.</p>
-<h1><b>Problem Description</b></h1>
-<p></p>In this project, your task is to identify major customer segments on a transnational data set which contains all the transactions occurring between 01/12/2010 and 09/12/2011 for a UK-based and registered non-store online retail.The company mainly sells unique all-occasion gifts. Many customers of the company are wholesalers.</p>
-<h1>Data Description</h1>
-<ul>
-<li>InvoiceNo: Invoice number. Nominal, a 6-digit integral number uniquely assigned to each transaction. If this code starts with letter 'c', it indicates a cancellation.</li>
-<li></li>StockCode: Product (item) code. Nominal, a 5-digit integral number uniquely assigned to each distinct product.
-Description: Product (item) name. Nominal.</li>
-<li>Quantity: The quantities of each product (item) per transaction. Numeric.</li>
-<li>InvoiceDate: Invoice Date and time. Numeric, the day and time when each transaction was generated.</li>
-<li>UnitPrice: Unit price. Numeric, Product price per unit in sterling.</li>
-<li>CustomerID: Customer number. Nominal, a 5-digit integral number uniquely assigned to each customer.</li>
-<li>Country: Country name. Nominal, the name of the country where each customer resides.</li>
-</ul>
+# Customer Segmentation
 
-<p> This project has been completed in 5 steps :-</p>
-<ol>
-<li>Data Cleaning</li>
-<li>Exploratory Data Analysis (EDA)</li>
-<li>Data Transformation</li>
-<li>Clustering</li>
-<li>Cluster Profiling</li>
-<li>Model Performance</li>
-</ol>
+In a world where companies are expanding rapidly and regularly serving a large consumer base, businesses must classify their clientele to provide better customer service and understand how different customer segments might affect their operations. The purpose of this project is to categorize customers and determine how they affect the company.
 
-<p>From the EDA section some assumptions can be made</p>
-<ol>
-<li>Small to medium quantities of each item are purchased more.</li>
-<li>Unit price for most products is low.</li>
-<li>Last quarter of the year has more orders maybe due to the holiday season.</li>
-<li>As customers buy in large quantites, it is a volume based business.</li>
-</ol>
+## Problem Description
 
-<h1>Model Performance</h1>
-<h2>Kmeans</h2>
+In this project, your task is to identify major customer segments in a transnational dataset. The dataset contains all the transactions occurring between 01/12/2010 and 09/12/2011 for a UK-based and registered non-store online retail. The company mainly sells unique all-occasion gifts, and many of its customers are wholesalers.
 
-![capstoneimage1](https://github.com/jouherdauf/Customer-Segmentation/blob/main/images/capstoneimage1.png)
+## Data Description
 
+- **InvoiceNo**: Invoice number. A 6-digit integral number uniquely assigned to each transaction. If this code starts with the letter 'c', it indicates a cancellation.
+- **StockCode**: Product (item) code. A 5-digit integral number uniquely assigned to each distinct product.
+- **Description**: Product (item) name.
+- **Quantity**: The quantities of each product (item) per transaction.
+- **InvoiceDate**: Invoice Date and time, the day and time when each transaction was generated.
+- **UnitPrice**: Unit price. Product price per unit in sterling.
+- **CustomerID**: Customer number, a 5-digit integral number uniquely assigned to each customer.
+- **Country**: Country name, the name of the country where each customer resides.
 
-<h2>Heirachical</h2>
+## Project Steps
 
-![heirachical](https://github.com/jouherdauf/Customer-Segmentation/assets/64728749/27bdc89e-93f8-404e-b30b-588e30a9eae8)
+1. **Data Cleaning**
+2. **Exploratory Data Analysis (EDA)**
+3. **Data Transformation**
+4. **Clustering**
+5. **Cluster Profiling**
+6. **Model Performance**
 
-<h2>Model Evaluation Table</h2>
-<table>
-  <tr>
-    <th>Sl.no</th>
-    <th>Model Name</th>
-    <th>Data</th>
-    <th>Optimal_Number_of_cluster</th>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>K-Means with silhouette_score </td>
-    <td>RFM</td>
-    <td>3</td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td>K-Means with Elbow methos </td>
-    <td>RFM</td>
-    <td>3</td>
-  </tr>
-    <tr>
-    <td>3</td>
-    <td> K-Means with distortion methos</td>
-    <td>RFM</td>
-    <td>3</td>
-  </tr>
-    <tr>
-    <td>4</td>
-    <td>K-Means with calinski_harabasz </td>
-    <td>RFM</td>
-    <td>3</td>
-  </tr>
-    <tr>
-    <td>5</td>
-    <td>Hierarchical clustering(ward) with silhoutte_score</td>
-    <td>RFM</td>
-    <td>3</td>
-  </tr>
-    <tr>
-    <td>6</td>
-    <td>Hierarchical clustering(ward) with dendograms and eulidean distance 40</td>
-    <td>RFM</td>
-    <td>3</td>
-  </tr>
-</table>
+### Assumptions from EDA
 
-## **Conclusion**
+1. Small to medium quantities of each item are purchased more.
+2. Unit price for most products is low.
+3. The last quarter of the year has more orders, maybe due to the holiday season.
+4. As customers buy in large quantities, it is a volume-based business.
 
+## Model Performance
 
-### 1. Data Cleaning: Here, outliers, null values, and canceled orders were eliminated.
-### 2. Exploratory Data Analysis (EDA): In this section, univariate and bivariate analyses were performed to gain a deeper understanding of the data. The company offers medium-to-low quantities of single items at a cheaper unit cost. More orders of various items were placed in the previous quarter, with the UK placing the highest orders overall. The "pack of 72 retrospot cake cases" was the best-selling item in terms of amount sold.
+### Kmeans
 
-### 3. Data Transformation: For each customer ID in this section,Monetary , frequency, and recency analysis was produced. These three elements are essential part of customer segmentation.
+![Kmeans](https://github.com/jouherdauf/Customer-Segmentation/blob/main/images/capstoneimage1.png)
 
-### 4 Outliers detection & Feture Transformation: Frequency  and Monetary contains high number's of outliers but by any customer id it means we may be ignoring potential client so we have remove very outliers.Recency,Frequency and Monetary is higly positive so we have applied logarithm transformation to it.
+### Hierarchical
 
-### 5. Clustering Kmeans: In this step, the optimal number of clusters was ascertained by using silhouette analysis and the elbow technique. The optimal clusters were found to be three. The KMeans model contained three clusters. Every customer ID was allocated to one of the three clusters.
+![Hierarchical](https://github.com/jouherdauf/Customer-Segmentation/assets/64728749/27bdc89e-93f8-404e-b30b-588e30a9eae8)
 
-### 6. Clustering Silhoutte - Using the silhoutte analysis and dendograms distance, the ideal number of clusters is three.
+### Model Evaluation Table
 
-### 7. Cluster Profiling: The frequency, monetary values, and recency of each client segment were averaged in this section. As a result, three groups were identified: high value and loyal customers, average value and frequent customers, and low value and infrequent customers.
+| Sl.no | Model Name                                 | Data    | Optimal Number of Clusters |
+|-------|--------------------------------------------|---------|----------------------------|
+| 1     | K-Means with silhouette score              | RFM     | 3                          |
+| 2     | K-Means with Elbow method                  | RFM     | 3                          |
+| 3     | K-Means with distortion method             | RFM     | 3                          |
+| 4     | K-Means with calinski_harabasz             | RFM     | 3                          |
+| 5     | Hierarchical clustering (ward) with silhouette score | RFM | 3                   |
+| 6     | Hierarchical clustering (ward) with dendograms and Euclidean distance 40 | RFM | 3 |
 
-### 8. Model Performance: From the above table we can say that 3 clusters are optimum for clustering.The best performance is given by kmeans with 3 clusters and in Hierarchical clustering best model is given by ward method with 3 clusters
+## Conclusion
 
+1. **Data Cleaning:** Outliers, null values, and canceled orders were eliminated.
+2. **Exploratory Data Analysis (EDA):** Medium-to-low quantities of single items are sold at a cheaper unit cost. More orders of various items were placed in the previous quarter, with the UK placing the highest orders overall. The "pack of 72 retrospot cake cases" was the best-selling item in terms of the amount sold.
+3. **Data Transformation:** Monetary, frequency, and recency analysis was performed for each customer ID.
+4. **Outliers Detection & Feature Transformation:** Frequency and Monetary contain a high number of outliers, but removing them may result in ignoring potential clients. Recency, Frequency, and Monetary are highly positively skewed, so logarithm transformation was applied.
+5. **Clustering (Kmeans):** The optimal number of clusters was found to be three. Every customer ID was allocated to one of the three clusters.
+6. **Clustering (Hierarchical):** Using silhouette analysis and dendrogram distance, the ideal number of clusters was found to be three.
+7. **Cluster Profiling:** The frequency, monetary values, and recency of each client segment were averaged, resulting in three groups: high-value and loyal customers, average value and frequent customers, and low-value and infrequent customers.
+8. **Model Performance:** The best performance is given by Kmeans with 3 clusters, and in hierarchical clustering, the best model is given by the ward method with 3 clusters.
 
-### Based on the results of this analysis, the company may provide its average and low-value clients with enticing offers, and it can also provide specific business services to its high-value clients, such loyalty points.
-
-
-
+Based on the results of this analysis, the company may provide average and low-value clients with enticing offers, and it can also provide specific business services to high-value clients, such as loyalty points.
